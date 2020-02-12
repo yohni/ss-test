@@ -1,0 +1,139 @@
+/* global */
+body{
+  font-family: 'Montserrat', sans-serif !important;
+  transition: all 0.25s;
+  color: #303C42;
+  position: relative;
+}
+
+.container{
+  max-width: 960px;
+}
+
+
+.section-title{
+  font-weight: 800;
+}
+
+/* navbar */
+nav{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.2s ease-in-out;
+  height: 60px;
+  z-index: 999;
+}
+
+.nav-down{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.nav-up {
+  top: -60px;
+}
+
+@media (max-width: 976px){
+  .navbar-collapse{
+    padding: 16px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 90;
+  }
+}
+
+#navbarMain a{
+  text-align: center;
+}
+
+
+/* motive */
+#motive{
+  background: url('../images/motive.jpg') no-repeat;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(180deg, rgba(107, 213, 225, 0.72) 0%, rgba(255, 217, 142, 0.72) 100%);
+}
+
+.layer h2.h2{
+  font-weight: 800;
+}
+
+.layer p{
+  max-width: 420px;
+}
+
+/* hobby */
+#hobby{
+  
+}
+
+
+.m-card{
+  max-width: 18rem;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.m-card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px 0px !important;
+}
+
+.m-card-header{
+  padding: 0;
+  max-width: 18rem;
+  height: 200px;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.m-card-body{
+  padding: 16px;
+}
+
+.m-card-title{
+  font-weight: bold;
+}
+
+.m-card-ctx{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+
+/* contact */
+#contact{
+  background: #FFD98E;
+  padding: 32px 0 0;
+}
+
+#contact a{
+  color: #303C42;
+  transition: 0.5s;
+}
+
+#contact a:hover{
+  color: #000000;
+  text-decoration: none;
+}
+
+#contact .social a{
+  margin: 8px;
+}
+
